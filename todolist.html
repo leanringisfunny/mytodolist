@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todo_base.css" rel="stylesheet" type="text/css">
+    <link href="todo_element.css" rel="stylesheet" type="text/css">
+    <title>My todo list</title>
+</head>
+<body>
+
+    
+    <div class ="root">
+        <div class="container">
+            <div class="container-01">
+            <div class="container__room"></div>
+            <div class="title"><h2>todo list </h2></div>
+            <div class="container__input-wrapper">
+                <input  required  onkeyup="enterkey();" type="text"  class="input-list" autofocus placeholder="input something to do of you today">
+                <button type="button" class="input-button">입력</button>
+            </div>
+            <ul class="todolist"></ul>
+            </div>
+
+            <div class="container-02">
+            <div class="container__search-wrapper">
+                <div class="container__icon-wrapper">
+                <svg class="container__saerch-icon" viewBox="0 0 20 20" width="30">
+                    <path d="M18.125,15.804l-4.038-4.037c0.675-1.079,1.012-2.308,1.01-3.534C15.089,4.62,12.199,1.75,8.584,1.75C4.815,1.75,1.982,4.726,2,8.286c0.021,3.577,2.908,6.549,6.578,6.549c1.241,0,2.417-0.347,3.44-0.985l4.032,4.026c0.167,0.166,0.43,0.166,0.596,0l1.479-1.478C18.292,16.234,18.292,15.968,18.125,15.804 M8.578,13.99c-3.198,0-5.716-2.593-5.733-5.71c-0.017-3.084,2.438-5.686,5.74-5.686c3.197,0,5.625,2.493,5.64,5.624C14.242,11.548,11.621,13.99,8.578,13.99 M16.349,16.981l-3.637-3.635c0.131-0.11,0.721-0.695,0.876-0.884l3.642,3.639L16.349,16.981z"></path>
+                </svg>
+                </div>
+                <input type="text"class="input-search"placeholder="try to search what you wrote">
+            </div>
+
+            <ul class="container__search-list"></ul>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+    <script src="add.js"></script>
+    <script src="delete.js"></script>
+    <script src="search.js"></script> 
+      
+</body>
+</html>
